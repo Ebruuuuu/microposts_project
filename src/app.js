@@ -14,7 +14,8 @@ submitPost);
 //Listen for delete post
 
 /*event delegation yöntemi kullanıldı, çünkü delete ikonunun sayısı(child elements) birden çoktur.
-Bu nedenle kapsayıcı parent element olan posts div'i ele alındı.*/
+Bu nedenle kapsayıcı parent element olan posts div'i ele alındı.
+Böylece event listener'lar tarafından kullanılan bellek miktarı da azaltılmış olur.*/
 document.querySelector('#posts').addEventListener('click',deletePost);
 
 //Listen for edit state
